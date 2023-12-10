@@ -20,46 +20,101 @@ body {
     height: 570px;
     /* justify-content: center; */
     /* align-items: center; */
-    background: yellow;
+    /* background: yellow; */
     display: flex;
+    background: linear-gradient(90deg, #d93131, #b90000, #80082a, #550735, #08063c);
     
     
 }
 
 .socials {
     margin-top: 0%;
-    width: 856px;
-    background: orange;
+    width: 656px;
+    /* background: orange; */
     align-items: center;
     justify-content: center;
     display: flex;
-   
     height: 50px
 }
 
 .socials a {
     display: inline-block;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 700;
     padding: 0 30px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    align-items: center;
+}
+
+.socials a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s;
+}
+
+.socials a:hover::after {
+    width: 50%;
+}
+
+.socials img {
+    height: 25px;
+    width: 25px;
+    display: inline;
+    align-items: center;
 }
 
 .introduction {
-    width: 500px;
-    background-color: aliceblue;
+    width: 700px;
+    /* background-color: aliceblue; */
     height: 570px;
     margin-left: 0;
-}
-
-.introduction h3, h1, h5 {
     text-align: center;
-    padding-top: 10px;  
+    padding-top: 10px; 
+    
 }
 
 .introduction h1 {
-    padding-top: 250px;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(media/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
 }
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.introduction h2 {
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.introduction h5 {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.introduction p {
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
 
 /* Navigation Bar======================================================================================== */
 header {
