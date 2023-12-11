@@ -11,13 +11,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    width: 100%;
+    
     /* background: linear-gradient(60deg , #ebe9ee, #bb8ad7, #ffffff, #08e761); */
     
 }
 
 /*Top (Welcome to my Portfolio)========================================================================== */
 #intro {
-    height: 900px;
+    height: 1000px;
     /* justify-content: center; */
     /* align-items: center; */
     /* background: yellow; */
@@ -119,7 +121,82 @@ body {
 .intro-container {
     display: flex;
     position: relative;
+    padding-top: 10px;
 }
+
+.resume-btn {
+    position: relative;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    padding: 10px 30px;
+    transition: 0.5s; 
+       
+}
+
+.resume-btn:hover {
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.resume-btn::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    
+}
+
+.resume-btn span {
+    position: relative;
+    color: #fff;
+    z-index: 1;   
+}
+
+.resume-btn i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.resume-btn i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 70px;
+    height: 4px;
+    background-color: #ffffff;
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.resume-btn:hover i::before {
+    width: 140px;
+    left: 20%;
+} 
+
+.resume-btn i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 70px;
+    height: 4px;
+    background-color: #ffffff;
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.resume-btn:hover i::after {
+    width: 140px;
+    left: 80%;
+} 
 
 .image {
     margin-top: 80px;
@@ -211,6 +288,9 @@ header {
     top: 0;
     bottom: 0;
     margin: auto;
+    height: 70px;
+    z-index: 100;
+    width: auto;
 }
 
 nav {
@@ -254,41 +334,303 @@ nav a:hover::after {
     width: 95%;
 }
 
-/* nav a:nth-child(1):hover~span {
-    left: 190px;
-    width: 120px;
-}
+/*Sections container=========================================================================================== */
 
-nav a:nth-child(2):hover~span {
-    left: 330px;
-    width: 160px;
-}
-
-nav a:nth-child(3):hover~span {
-    left: 518px;
-    width: 100px;
-}
-
-nav a:nth-child(4):hover~span {
-    left: 643px;
-    width: 180px;
-}
-
-nav a:nth-child(5):hover~span {
-    left: 845px;
-    width: 155px;
-}
-
-nav a:nth-child(6):hover~span {
-    left: 1020px;
-    width: 140px;
+/* #sections-container {
+    padding-top: 70px;
+    display: block;
 } */
+
+/*About section================================================================================================ */
+
+#about {
+    background: yellowgreen;
+    width: 1000px;
+    margin-left: 50px;
+    align-items: center;
+    display: block;
+    height: 300px;
+    scroll-margin-top: 70px;
+    margin-top: 30px;
+}
+
+.about-container {
+    border: 5px solid #000;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    position: relative;
+    width: 900px;
+
+    top: 50%; /*to center the container to the section*/
+    left: 50%;  /*to center the container to the section*/
+    transform: translate(-50%, -50%);  /*to center the container to the section*/
+}
+
+.about-container h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.about-container p {
+    font-size: 20px;
+}
+
+/*education section================================================================================== */
+
+#education {
+    background: #af7979;
+    width: 1000px;
+    margin-left: 650px;
+    margin-top: 20px;
+    align-items: center;
+    display: block;
+    height: 350px;
+    scroll-margin-top: 70px;
+}
+
+.education-container {
+    border: 5px solid #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    width: 900px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.education-container h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.education-container h3 {
+    font-size: 28px;
+}
+
+.education-container h4 {
+    font-size: 23px;
+}
+
+.education-container p {
+    font-size: 20px;
+}
+
+.dlsud {
+    border: 3px solid #000;
+    margin-top: 10px;
+}
+
+.letran {
+    border: 3px solid #000;
+    margin-top: 15px;
+}
+
+/*Skills section======================================================================================= */
+
+#skills {
+    background: #beb1e7;
+    width: 1000px;
+    margin-left: 50px;
+    margin-top: 20px;
+    align-items: center;
+    display: block;
+    height: 550px;
+    scroll-margin-top: 70px;
+}
+
+.skills-container {
+    border: 5px solid #000;
+    width: 900px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills-container h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-container h3 {
+    font-size: 28px;
+}
+
+.skills-container h4 {
+    font-size: 23px;
+}
+
+.skills-container p {
+    font-size: 20px;
+}
+
+.ProgLang {
+    border: 3px solid #000;
+    margin-top: 10px;
+}
+
+.Database {
+    border: 3px solid #000;
+    margin-top: 15px;
+}
+
+.adobe {
+    border: 3px solid #000;
+    margin-top: 15px;
+}
+
+.Microsoft {
+    border: 3px solid #000;
+    margin-top: 15px;
+}
+
+/*Experience section=================================================================================== */
+
+#experience {
+    background: #e08610;
+    margin-top: 20px;
+    height: 320px;
+    width: 1000px;
+    margin-left: 650px;
+    display: block;
+    scroll-margin-top: 70px;
+}
+
+.experience-container {
+    border: 5px solid #000;
+    width: 900px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.experience-container h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.experience-container h3 {
+    font-size: 28px;
+}
+
+.experience-container h4 {
+    font-size: 23px;
+}
+
+.experience-container p {
+    font-size: 20px;
+}
+
+.exp1 {
+    border: 3px solid #000;
+    margin-top: 10px;
+}
+
+/*Projects section===================================================================================== */
+
+#projects {
+    background: #0dff00;
+    height: 430px;
+    width: 1000px;
+    margin-top: 20px;
+    margin-left: 50px;
+    display: block;
+    scroll-margin-top: 70px;
+}
+
+.projects-container {
+    border: 5px solid #000;
+    width: 900px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects-container h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.projects-container h3 {
+    font-size: 28px;
+}
+
+.projects-container h4 {
+    font-size: 23px;
+}
+
+.projects-container p {
+    font-size: 20px;
+}
+
+.thesis {
+    margin-top: 10px;
+    border: 3px solid #000;
+}
+
+/*Contact me section=================================================================================== */
+
+#contact {
+    background: #d80e9c;
+    height: 500px;
+    width: 1600px;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: block;
+    scroll-margin-top: 70px;
+    
+}
+
+.contact-container {
+    border: 3px solid #000;
+    position: relative;
+    width: 900px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.contact-container p {
+    font-size: 20px;
+}
+
 
 /*Footer=============================================================================================== */
 
 footer {
     text-align: center;
-    /* position: sticky;
-    bottom: 0; */
     border: 15px #bf0000;
 }
