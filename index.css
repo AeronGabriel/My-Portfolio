@@ -137,7 +137,7 @@ body {
     font-weight: 600;
 }
 
-.text.first-phrase::before {
+.text.first-phrase:before {
     content: "";
     position: absolute;
     top: 0;
