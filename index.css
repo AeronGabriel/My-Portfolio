@@ -446,6 +446,8 @@ nav a:hover::after {
     display: block;
     height: 500px;
     scroll-margin-top: 70px;
+    position: relative;
+    overflow: hidden;
 }
 
 .education-container {
@@ -583,6 +585,8 @@ nav a:hover::after {
     margin-left: 650px;
     display: block;
     scroll-margin-top: 70px;
+    position: relative;
+    overflow: hidden;
 }
 
 .experience-container {
@@ -733,4 +737,33 @@ nav a:hover::after {
 footer {
     text-align: center;
     border: 15px #bf0000;
+}
+
+/*for transition======================================================================================= */
+
+/* .transition-left {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.transition-right {   
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(100%);
+} */
+
+.transition {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
