@@ -1,3 +1,5 @@
+/*importing font 'Poppins'*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +14,10 @@ body {
     align-items: center;
     min-height: 100vh;
     width: 100%;
+    background-image: url(media/background.gif);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
     
     /* background: linear-gradient(60deg , #ebe9ee, #bb8ad7, #ffffff, #08e761); */
     
@@ -24,7 +30,9 @@ body {
     /* align-items: center; */
     /* background: yellow; */
     display: block;
-    background: linear-gradient(90deg, #d93131, #b90000, #80082a, #550735, #08063c);
+    /* background: linear-gradient(90deg, #d93131, #b90000, #80082a, #550735, #08063c); */
+    background: #030d2b;
+    overflow: hidden;
     
     
 }
@@ -104,8 +112,13 @@ body {
 }
 
 .introduction h2 {
-    padding-top: 140px;
+    padding-top: 120px;
     color: rgb(255, 255, 255);
+}
+
+.introduction h4 {
+    font-size: 1.4em;
+    color: #fff;
 }
 
 .introduction h5 {
@@ -116,6 +129,34 @@ body {
 .introduction p {
     padding-top: 20px;
     color: rgb(255, 255, 255);
+}
+
+.introduction .text {
+    position: relative;
+    color: #0099ff;
+    font-weight: 600;
+}
+
+.text.first-phrase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #030d2b;
+    border-left: 3px solid #ff0000;
+    animation: cursor 4s steps(12) infinite;
+}
+
+@keyframes cursor {
+    40%, 60% {
+        left: 100%;
+        }
+    
+    100% {
+        left: 0;
+    }
 }
 
 .intro-container {
@@ -296,7 +337,7 @@ header {
 nav {
     width: auto;
     height: 70px;
-    background: linear-gradient(30deg, #090088, #02006c, #03002e, #010048, #010057);
+    background: linear-gradient(90deg, #d93131, #b90000, #80082a, #550735, #08063c);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,12 +385,18 @@ nav a:hover::after {
 /*About section================================================================================================ */
 
 #about {
-    background: yellowgreen;
+    background: linear-gradient(135deg, #ffffff1a, #ffffff00);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffff;
+    box-shadow: 0 8px 32px 0 #ffffff00;
+
     width: 1000px;
     margin-left: 50px;
     align-items: center;
     display: block;
-    height: 300px;
+    height: 400px;
     scroll-margin-top: 70px;
     margin-top: 30px;
 }
@@ -371,22 +418,33 @@ nav a:hover::after {
 .about-container h2 {
     text-align: center;
     font-size: 35px;
+    color: white;
+    color: #fff;
 }
 
 .about-container p {
     font-size: 20px;
+    color: white;
+    color: #fff;
 }
 
 /*education section================================================================================== */
 
 #education {
-    background: #af7979;
+    
+    background: linear-gradient(135deg, #ffffff1a, #ffffff00);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffff;
+    box-shadow: 0 8px 32px 0 #ffffff00;
+
     width: 1000px;
     margin-left: 650px;
     margin-top: 20px;
     align-items: center;
     display: block;
-    height: 350px;
+    height: 500px;
     scroll-margin-top: 70px;
 }
 
@@ -407,18 +465,22 @@ nav a:hover::after {
 .education-container h2 {
     text-align: center;
     font-size: 35px;
+    color: #fff;
 }
 
 .education-container h3 {
     font-size: 28px;
+    color: #fff;
 }
 
 .education-container h4 {
     font-size: 23px;
+    color: #fff;
 }
 
 .education-container p {
     font-size: 20px;
+    color: #fff;
 }
 
 .dlsud {
@@ -434,13 +496,19 @@ nav a:hover::after {
 /*Skills section======================================================================================= */
 
 #skills {
-    background: #beb1e7;
+    background: linear-gradient(135deg, #ffffff1a, #ffffff00);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffff;
+    box-shadow: 0 8px 32px 0 #ffffff00;
+
     width: 1000px;
     margin-left: 50px;
     margin-top: 20px;
     align-items: center;
     display: block;
-    height: 550px;
+    height: 700px;
     scroll-margin-top: 70px;
 }
 
@@ -461,18 +529,22 @@ nav a:hover::after {
 .skills-container h2 {
     text-align: center;
     font-size: 35px;
+    color: #fff;
 }
 
 .skills-container h3 {
     font-size: 28px;
+    color: #fff;
 }
 
 .skills-container h4 {
     font-size: 23px;
+    color: #fff;
 }
 
 .skills-container p {
     font-size: 20px;
+    color: #fff;
 }
 
 .ProgLang {
@@ -498,9 +570,15 @@ nav a:hover::after {
 /*Experience section=================================================================================== */
 
 #experience {
-    background: #e08610;
+    background: linear-gradient(135deg, #ffffff1a, #ffffff00);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffff;
+    box-shadow: 0 8px 32px 0 #ffffff00;
+
     margin-top: 20px;
-    height: 320px;
+    height: 450px;
     width: 1000px;
     margin-left: 650px;
     display: block;
@@ -524,18 +602,22 @@ nav a:hover::after {
 .experience-container h2 {
     text-align: center;
     font-size: 35px;
+    color: #fff;
 }
 
 .experience-container h3 {
     font-size: 28px;
+    color: #fff;
 }
 
 .experience-container h4 {
     font-size: 23px;
+    color: #fff;
 }
 
 .experience-container p {
     font-size: 20px;
+    color: #fff;
 }
 
 .exp1 {
@@ -546,8 +628,14 @@ nav a:hover::after {
 /*Projects section===================================================================================== */
 
 #projects {
-    background: #0dff00;
-    height: 430px;
+    background: linear-gradient(135deg, #ffffff1a, #ffffff00);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffff;
+    box-shadow: 0 8px 32px 0 #ffffff00;
+
+    height: 550px;
     width: 1000px;
     margin-top: 20px;
     margin-left: 50px;
@@ -572,18 +660,22 @@ nav a:hover::after {
 .projects-container h2 {
     text-align: center;
     font-size: 35px;
+    color: #fff;
 }
 
 .projects-container h3 {
     font-size: 28px;
+    color: #fff;
 }
 
 .projects-container h4 {
     font-size: 23px;
+    color: #fff;
 }
 
 .projects-container p {
     font-size: 20px;
+    color: #fff;
 }
 
 .thesis {
@@ -594,7 +686,13 @@ nav a:hover::after {
 /*Contact me section=================================================================================== */
 
 #contact {
-    background: #d80e9c;
+    background: linear-gradient(135deg, #ffffff1a, #ffffff00);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffff;
+    box-shadow: 0 8px 32px 0 #ffffff00;
+
     height: 500px;
     width: 1600px;
     margin-left: 50px;
@@ -621,10 +719,12 @@ nav a:hover::after {
 .contact-container h2 {
     text-align: center;
     font-size: 35px;
+    color: #fff;
 }
 
 .contact-container p {
     font-size: 20px;
+    color: #fff;
 }
 
 
