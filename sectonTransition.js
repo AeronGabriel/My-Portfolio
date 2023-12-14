@@ -16,5 +16,22 @@ sectionsLeft.forEach((el) => observer.observe(el));
 const sectionsRight = document.querySelectorAll('.transition-right');
 sectionsRight.forEach((el) => observer.observe(el));
 
-// const sections = document.querySelectorAll('.transition-left');
-// sectionsLeft.forEach((el) => observer.observe(el));
+// // const sections = document.querySelectorAll('.transition');
+// // sectionsLeft.forEach((el) => observer.observe(el));
+
+// let sections = document.querySelectorAll('section');
+
+// window.onscroll = () => {
+//     sections.forEach(sec => {
+//         let top = window.scrollY;
+//         let offset = sec.offsetTop - 150;
+//         let height = sec.offsetHeight;
+
+//         if (top >= offset && top < offset + height) {
+//             sec.classList.add('show');
+//         }
+//         else {
+//             sec.classList.remove('show');
+//         }
+//     })
+// }

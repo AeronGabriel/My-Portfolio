@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
 }
@@ -18,7 +19,6 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: fixed;
-    overflow-x: hidden;
     
     /* background: linear-gradient(60deg , #ebe9ee, #bb8ad7, #ffffff, #08e761); */
     
@@ -378,10 +378,13 @@ nav a:hover::after {
 
 /*Sections container=========================================================================================== */
 
-/* #sections-container {
-    padding-top: 70px;
-    display: block;
-} */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
 
 /*About section================================================================================================ */
 
@@ -397,9 +400,9 @@ nav a:hover::after {
     margin-left: 50px;
     align-items: center;
     display: block;
-    height: 400px;
-    scroll-margin-top: 70px;
-    margin-top: 30px;
+    height: 80vh;
+    /* scroll-margin-top: 200px; */
+    margin-top: 70px;
 }
 
 .about-container {
@@ -442,12 +445,13 @@ nav a:hover::after {
 
     width: 1000px;
     margin-left: 650px;
-    margin-top: 20px;
+    margin-top: 70px;
     align-items: center;
     display: block;
-    height: 500px;
+    height: 80vh;
     scroll-margin-top: 70px;
-    overflow-x: hidden;
+    
+    /* overflow-x: hidden; */
 }
 
 .education-container {
@@ -507,10 +511,10 @@ nav a:hover::after {
 
     width: 1000px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 70px;
     align-items: center;
     display: block;
-    height: 700px;
+    height: 90vh;
     scroll-margin-top: 70px;
 }
 
@@ -579,13 +583,15 @@ nav a:hover::after {
     border: 1px solid #ffff;
     box-shadow: 0 8px 32px 0 #ffffff00;
 
-    margin-top: 20px;
-    height: 450px;
+    margin-top: 70px;
+    height: 80vh;
     width: 1000px;
     margin-left: 650px;
     display: block;
     scroll-margin-top: 70px;
-    overflow-x: hidden;
+    position: relative;
+    /* overflow-x: hidden; */
+    min-height: 90vh;
 }
 
 .experience-container {
@@ -638,12 +644,13 @@ nav a:hover::after {
     border: 1px solid #ffff;
     box-shadow: 0 8px 32px 0 #ffffff00;
 
-    height: 550px;
+    height: 80vh;
     width: 1000px;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-left: 50px;
     display: block;
     scroll-margin-top: 70px;
+    min-height: 90vh;
 }
 
 .projects-container {
@@ -699,9 +706,10 @@ nav a:hover::after {
     height: 500px;
     width: 1600px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 70px;
     display: block;
     scroll-margin-top: 70px;
+    min-height: 90vh;
     
 }
 
@@ -749,9 +757,10 @@ footer {
 
 .transition-right {   
     opacity: 0;
+    right: 0;
     transition: all 1s;
     filter: blur(5px);
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
 
 .show {
