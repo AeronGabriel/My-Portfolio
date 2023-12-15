@@ -404,11 +404,10 @@ section {
 
     width: 1000px;
     margin-left: 50px;
+    margin-top: 70px;
     align-items: center;
     display: block;
     height: 80vh;
-    /* scroll-margin-top: 200px; */
-    margin-top: 70px;
 }
 
 .searchBar {
@@ -494,9 +493,9 @@ section {
     border: 1px solid #ffffff;
     border-radius: 20px;
     padding-top: 10px;
+    padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 15px;
     position: relative;
     width: 900px;
     margin-top: 20px;
@@ -515,6 +514,19 @@ section {
     font-size: 35px;
     color: #fff;
 }
+
+/* .topPart {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.iconUI i {
+    position: relative;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 17px;
+} */
 
 .aboutContent p {
     font-size: 20px;
@@ -573,13 +585,10 @@ section {
     align-items: center;
     display: block;
     height: 80vh;
-    scroll-margin-top: 70px;
-    
-    /* overflow-x: hidden; */
 }
 
 .education-container {
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -587,41 +596,101 @@ section {
     padding-right: 20px;
     position: relative;
     width: 900px;
+    margin-top: 20px;
 
-    top: 50%;
+    /* top: 50%; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
 
-.education-container h2 {
-    text-align: center;
+.searchBar2 {
+    display: flex;
+    width: 900px;
+    height: 40px;
+    border: 1px solid #36232396;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #e6dbdb5d, #d0fffa9a);
+    box-shadow: 8px 0 32px 0 #00000077;
+}
+
+.searchBar2 p {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+#education h2 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 15px;
     font-size: 35px;
     color: #fff;
 }
 
 .education-container h3 {
-    font-size: 28px;
+    font-size: 25px;
     color: #fff;
+    margin-left: 10px;
 }
 
 .education-container h4 {
-    font-size: 23px;
+    font-size: 20px;
     color: #fff;
+    margin-left: 30px;
 }
 
 .education-container p {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
+    margin-left: 30px;
 }
 
 .dlsud {
-    border: 3px solid #000;
     margin-top: 10px;
 }
 
+.dlsudgrp {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.dlsudlogo img {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .letran {
-    border: 3px solid #000;
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+.letrangrp {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.letranlogo {
+    height: 200px;
+    width: 245px;
+}
+
+.letranlogo img {
+    height: 140px;
+    width: 140px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 /*Skills section======================================================================================= */
