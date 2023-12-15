@@ -9,6 +9,11 @@
     color: rgb(0, 0, 0);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 body {
     display: inline-block;
     justify-content: center;
@@ -34,6 +39,7 @@ body {
     /* background: linear-gradient(90deg, #d93131, #b90000, #80082a, #550735, #08063c); */
     background: #030d2b;
     overflow: hidden;
+    top: 0;
     
     
 }
@@ -390,10 +396,10 @@ section {
 
 #about {
     background: linear-gradient(135deg, #ffffff1a, #ffffff00);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 20px;
-    border: 1px solid #ffff;
+    border: 1px solid #ffffff3e;
     box-shadow: 0 8px 32px 0 #ffffff00;
 
     width: 1000px;
@@ -406,13 +412,15 @@ section {
 }
 
 .about-container {
-    border: 5px solid #000;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
     position: relative;
     width: 900px;
+   
 
     top: 50%; /*to center the container to the section*/
     left: 50%;  /*to center the container to the section*/
@@ -422,13 +430,11 @@ section {
 .about-container h2 {
     text-align: center;
     font-size: 35px;
-    color: white;
     color: #fff;
 }
 
 .about-container p {
     font-size: 20px;
-    color: white;
     color: #fff;
 }
 
@@ -437,10 +443,10 @@ section {
 #education {
     
     background: linear-gradient(135deg, #ffffff1a, #ffffff00);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 20px;
-    border: 1px solid #ffff;
+    border: 1px solid #ffffff3e;
     box-shadow: 0 8px 32px 0 #ffffff00;
 
     width: 1000px;
@@ -455,7 +461,8 @@ section {
 }
 
 .education-container {
-    border: 5px solid #000;
+    border: 2px solid #fff;
+    border-radius: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
@@ -503,10 +510,10 @@ section {
 
 #skills {
     background: linear-gradient(135deg, #ffffff1a, #ffffff00);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 20px;
-    border: 1px solid #ffff;
+    border: 1px solid #ffffff3e;
     box-shadow: 0 8px 32px 0 #ffffff00;
 
     width: 1000px;
@@ -519,7 +526,8 @@ section {
 }
 
 .skills-container {
-    border: 5px solid #000;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
     width: 900px;
     position: relative;
     padding-left: 20px;
@@ -577,10 +585,10 @@ section {
 
 #experience {
     background: linear-gradient(135deg, #ffffff1a, #ffffff00);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 20px;
-    border: 1px solid #ffff;
+    border: 1px solid #ffffff3e;
     box-shadow: 0 8px 32px 0 #ffffff00;
 
     margin-top: 70px;
@@ -595,7 +603,8 @@ section {
 }
 
 .experience-container {
-    border: 5px solid #000;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
     width: 900px;
     position: relative;
     padding-left: 20px;
@@ -638,10 +647,10 @@ section {
 
 #projects {
     background: linear-gradient(135deg, #ffffff1a, #ffffff00);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 20px;
-    border: 1px solid #ffff;
+    border: 1px solid #ffffff3e;
     box-shadow: 0 8px 32px 0 #ffffff00;
 
     height: 80vh;
@@ -654,7 +663,8 @@ section {
 }
 
 .projects-container {
-    border: 5px solid #000;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
     width: 900px;
     position: relative;
     padding-top: 15px;
@@ -697,10 +707,10 @@ section {
 
 #contact {
     background: linear-gradient(135deg, #ffffff1a, #ffffff00);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-radius: 20px;
-    border: 1px solid #ffff;
+    border: 1px solid #ffffff3e;
     box-shadow: 0 8px 32px 0 #ffffff00;
 
     height: 500px;
@@ -714,7 +724,8 @@ section {
 }
 
 .contact-container {
-    border: 3px solid #000;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
     position: relative;
     width: 900px;
     padding-top: 15px;
