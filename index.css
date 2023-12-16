@@ -542,7 +542,7 @@ section {
     /* border: 2px solid #fff; */
     height: 50px;
     width: 500px;
-    margin-top: 30px;
+    margin-top: 5px;
 
     left: 50%;
     transform: translateX(-50%);
@@ -556,8 +556,9 @@ section {
     font-size: 1.5em;
     letter-spacing: 0.1em;
     padding: 10px 30px;
-    margin-top: 50px;
+    margin-top: 25px;
     border: 2px solid #fff;
+    background: transparent;
 }
 
 .aboutBtn i {
@@ -565,7 +566,15 @@ section {
     margin-left: 20px;
 }
 
-
+.modal {
+    min-height: 85dvh;
+    max-height: 90dvh;
+    min-width: 85%;
+    max-width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 /*education section================================================================================== */
@@ -584,7 +593,7 @@ section {
     margin-top: 70px;
     align-items: center;
     display: block;
-    height: 80vh;
+    height: 80vh;   
 }
 
 .education-container {
@@ -721,17 +730,63 @@ section {
     padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-top: 20px;
+    max-height: 60%;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+    
 
-    top: 50%;
+    /* top: 50%; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
 
-.skills-container h2 {
-    text-align: center;
+.scrollContainer {
+    max-height: 50%;
+    padding: 10px 10px;
+    margin-top: 0;
+}
+
+.skills-container::-webkit-scrollbar {
+    max-height: 50%;
+    width: 0.5vw; /*vw = view width, does not change scrollbar width when website is zoomed in or out*/
+}
+
+.skills-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #fff5f500, #ffffff, #fff5f500);
+    border-radius: 60px;
+}
+
+.searchBar3 {
+    display: flex;
+    width: 900px;
+    height: 40px;
+    border: 1px solid #36232396;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #e6dbdb5d, #d0fffa9a);
+    box-shadow: 8px 0 32px 0 #00000077;
+}
+
+.searchBar3 p {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+#skills h2 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 15px;
     font-size: 35px;
     color: #fff;
 }
+
 
 .skills-container h3 {
     font-size: 28px;
@@ -741,31 +796,29 @@ section {
 .skills-container h4 {
     font-size: 23px;
     color: #fff;
+    margin-left: 20px;
 }
 
 .skills-container p {
     font-size: 20px;
     color: #fff;
+    margin-left: 20px;
 }
 
-.ProgLang {
-    border: 3px solid #000;
-    margin-top: 10px;
-}
+/* .ProgLang {
+    margin-top: 1px;
+} */
 
 .Database {
-    border: 3px solid #000;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .adobe {
-    border: 3px solid #000;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .Microsoft {
-    border: 3px solid #000;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 /*Experience section=================================================================================== */
@@ -798,14 +851,42 @@ section {
     padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-top: 20px;
+    max-height: 60%;
+    min-height: 60%;
+    overflow: hidden;
+    overflow-y: scroll;
 
-    top: 50%;
+    /* top: 50%; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
 
-.experience-container h2 {
-    text-align: center;
+.searchBar4 {
+    display: flex;
+    width: 900px;
+    height: 40px;
+    border: 1px solid #36232396;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #e6dbdb5d, #d0fffa9a);
+    box-shadow: 8px 0 32px 0 #00000077;
+}
+
+.searchBar4 p {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+#experience h2 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 15px;
     font-size: 35px;
     color: #fff;
 }
@@ -813,20 +894,43 @@ section {
 .experience-container h3 {
     font-size: 28px;
     color: #fff;
+    margin-left: 5px;
+    margin-top: 20px;
 }
 
 .experience-container h4 {
     font-size: 23px;
     color: #fff;
+    margin-left: 30px;
 }
 
 .experience-container p {
     font-size: 20px;
     color: #fff;
+    margin-left: 30px;
 }
 
-.exp1 {
-    border: 3px solid #000;
+.scrollContainer2 {
+    max-height: 50%;
+    /* padding: 10px 10px; */
+    margin-top: 1px;
+}
+
+.experience-container::-webkit-scrollbar {
+    max-height: 50%;
+    width: 0.5vw; /*vw = view width, does not change scrollbar width when website is zoomed in or out*/
+}
+
+.experience-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #fff5f500, #ffffff, #fff5f500);
+    border-radius: 60px;
+}
+
+.exps {
+    /* border: 3px solid #000; */
+    /* background: linear-gradient(90deg, #dbd2d2a8, #5c565672, #dac6c678); */
+    border-radius: 10px;
+    /* border: 1px solid #ffffff87; */
     margin-top: 10px;
 }
 

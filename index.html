@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script defer src = "sectionTransition.js"></script>
-        <script defer src = "scrollPadding.js"></script>
+        <script defer src = "modal.js"></script>
     </head>
 
     <body>
@@ -55,6 +55,7 @@
         
         <section id = "about" class = "transition-left">
             <h2>About Me</h2> 
+
             <div class="searchBar"> 
                 <i class="fa-solid fa-circle-info infoIcon"> </i><p>Some information about me</p>
             </div>
@@ -98,8 +99,22 @@
             </div>
 
             <div class="learnMoreBtn">
-                <a href="about.html" class = "aboutBtn">Learn More<i class="fa-solid fa-arrow-right"> </i></a>
+                <button class = "aboutBtn">Learn More<i class="fa-solid fa-arrow-right"> </i></button>
             </div>
+
+            <!--Modal-->
+            <dialog class="modal">
+                <button class = "closeModal"><i class="fa-solid fa-rectangle-xmark"></i></button>
+                <h1> this is a modal</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type 
+                     specimen book. It has survived not only five centuries, but also the leap into
+                      electronic typesetting, remaining essentially unchanged. It was popularised in 
+                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                      and more recently with desktop publishing software like Aldus PageMaker including 
+                      versions of Lorem Ipsum.</p>
+            </dialog>
 
         </section>
 
@@ -107,7 +122,7 @@
             <h2>Education</h2>
 
             <div class="searchBar2">
-                <i class="fa-solid fa-school infoIcon"> </i>><p>My educational background</p>
+                <i class="fa-solid fa-school infoIcon"> </i><p>My educational attainment</p>
             </div>
 
             <div class="education-container">
@@ -144,50 +159,85 @@
         </section>
 
         <section id = skills class = "transition-left">
+            <h2>Skills</h2>
+
+            <div class="searchBar3">
+                <i class="fa-solid fa-computer infoIcon"></i><p>Acquired skills from schools and self study</p>
+            </div>
+
             <div class="skills-container">
-                <h2>Skills</h2>
-                <div class = "ProgLang">
-                    <h3>Programming and Scripting Languages:</h3>
-                    <h4>C/C++ | Java | JavaScript | C#/.NET | PHP | HTML | CSS</h4>
-                    <p>These are the programming languages that we've tackled during my study.</p>
+                
+                <div class="scrollContainer">
+                
+                    <div class = "ProgLang">
+                        <h3>Programming and Scripting Languages:</h3>
+                        <h4>C/C++ | Java | JavaScript | C#/.NET | PHP | HTML | CSS</h4>
+                        <p>These are the programming languages that we've tackled during my study.</p>
+                        <br><hr>
+                    </div>
+
+                    <div class = "Database">
+                        <h3>Database:</h3>
+                        <h4>MySQL</h4>
+                        <p>These are the types of SQL that we've tackled during my study.</p>
+                        <br><hr>
+                    </div>
+
+                    <div class = "adobe">
+                        <h3>Editing Softwares:</h3>
+                        <h4>Adobe Premire Pro | Adobe Photoshop CS6 | Adobe Illustrator</h4>
+                        <p>These are the editing softwares I learned to use during my study in High School.<br>
+                            The use of Photoshop and Illustrator were also tackled during my study in College.  
+                        </p>
+                        <br><hr>
+                    </div>
+
+                    <div class = "Microsoft">
+                        <h3>Microsoft Applications:</h3>
+                        <h4>MS Word | MS PowerPoint | MS Excel | MS Outlook</h4>
+                        <p>Microsoft office applications that I use.</p>
+                        <br><hr>
+                    </div>
+
                 </div>
 
-                <div class = "Database">
-                    <h3>Database:</h3>
-                    <h4>MySQL</h4>
-                    <p>These are the types of SQL that we've tackled during my study.</p>
-                </div>
-
-                <div class = "adobe">
-                    <h3>Editing Softwares:</h3>
-                    <h4>Adobe Premire Pro | Adobe Photoshop CS6 | Adobe Illustrator</h4>
-                    <p>These are the editing softwares I learned to use during my study in High School.<br>
-                        The use of Photoshop and Illustrator were also tackled during my study in College.  
-                    </p>
-                </div>
-
-                <div class = "Microsoft">
-                    <h3>Microsoft Applications:</h3>
-                    <h4>MS Word | MS PowerPoint | MS Excel | MS Outlook</h4>
-                    <p>Microsoft office applications that I use.</p>
-                </div>
             </div>
         </section>
 
         <section id = "experience" class = "transition-right">
-            <div class="experience-container">
-                <h2>My Experience/s</h2>
-                <div class = "exp1">
-                    <h3>EDS Manufacturing Inc. (EMI) - Yazaki | Imus, Cavite</h3>
-                    <h4>Data Encoder/Analysis (Internship) | February 2023 - May 2023</h4>
-                    <p>As a data encoder under Production Preparation Department (PPD), I analyze and encode the company's Product 
-                        data that are being manufactured. I encode these data through the use of Micrsoft Excel. During my internship,
-                        my supervisor taught me some formulas to sort data and find duplicates and discrepancies. Though my internship isn't 
-                        really aligned with what I've studied, I did learn new things as a data encoder/analysis.
-                    </p>
-                </div>
+            <h2>My Experience/s</h2>
 
-                <!-- add more div sections for additonal experience -->
+            <div class="searchBar4">
+                <i class="fa-solid fa-briefcase infoIcon"></i><p>Previous working experience/s</p>
+            </div>
+
+            <div class="experience-container">
+
+                <div class="scrollContainer2">
+
+                    <div class = "exps">
+                        <h3>EDS Manufacturing Inc. (EMI) - Yazaki | Imus, Cavite</h3>
+                        <h4>Data Encoder/Analysis (Internship) | February 2023 - May 2023</h4>
+                        <p>As a data encoder under Production Preparation Department (PPD), I analyze and encode the company's Product 
+                            data that are being manufactured. I encode these data through the use of Micrsoft Excel. During my internship,
+                            my supervisor taught me some formulas to sort data and find duplicates and discrepancies. Though my internship isn't 
+                            really aligned with what I've studied, I did learn new things as a data encoder/analysis.
+                        </p>
+                        <br><hr>
+                    </div>
+
+                    <div class="exps">
+                        <h3>To my future Company</h3>
+                        <h4>Web Dev/Software Engineer/Software Dev | January 2024 - Future</h4>
+                        <p>I promise to deliver my knowledge and skills to the future company as well as to grow and build stronger foundation
+                            in programming in either Web Development or Software Development/Engineering. I am also willing to be trained.
+                            I am a fast learner and a hungry learner who wishes to create an impactful projects for the future and my future company. 
+                        </p>
+                        <br><hr>
+                    </div>
+                    <!-- add more div sections for additonal experience -->
+                </div>
+                
             </div>
         </section>
 
