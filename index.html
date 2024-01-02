@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script defer src = "sectionTransition.js"></script>
-        <script defer src = "modal.js"></script>
+        <script defer src = "modals.js"></script>
     </head>
 
     <body>
@@ -103,7 +103,7 @@
             </div>
 
             <!--Modal-->
-            <dialog class="modal">
+            <dialog class="aboutModal">
                 <button class = "closeModal"><i class="fa-solid fa-rectangle-xmark"></i></button>
                 <h1> this is a modal</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -242,34 +242,110 @@
         </section>
 
         <section id = "projects" class = "transition-left">
-            <div class="projects-container">
-                <h2>My Projects</h2>
-                <div class = "thesis">
-                    <h3>A Web-Based Violation and Incident Report System for Barangay bayan Luma I, Imus, Cavite</h3>
-                    <h4>PHP | JavaScript | HTML | CSS</h4>
-                    <p>As part of our requirement, we developed a web-based system for Barangay Bayan Luma I in Imus, Cavite.
-                        It is an online data storage for all the reports such as incidents, violations, and blotters. We decided 
-                        to develop this web-based system because we noticed that most of the barangays in the Philippines record
-                        their data through a log book which isn't an efficient way to store reports and it could be time consuming
-                        to find the old records. Our system is also capable of generating a barangay clearance if the person requesting
-                        has a clean record in their barangay. 
-                    </p>
-                    <p><b>Project Link: </b></p> <!--can be button/replace to button -->
-                </div>
-                
-                <!-- add more div sections for additonal projects -->
 
-            </div>         
+            <h2>My Projects</h2>
+
+            <div class="searchBar4">
+                <i class="fa-solid fa-diagram-project infoIcon"></i><p>Previous projects that I worked on</p>
+            </div>
+
+            <div class="projects-container">
+
+                <div class="scrollContainer2">
+                
+                    <div class = "projs">
+                        <h3>A Web-Based Violation and Incident Report System for Barangay bayan Luma I, Imus, Cavite</h3>
+                        <h4>PHP | JavaScript | HTML | CSS</h4>
+                        <p>As part of our requirement, we developed a web-based system for Barangay Bayan Luma I in Imus, Cavite.
+                            It is an online data storage for all the reports such as incidents, violations, and blotters. We decided 
+                            to develop this web-based system because we noticed that most of the barangays in the Philippines record
+                            their data through a log book which isn't an efficient way to store reports and it could be time consuming
+                            to find the old records. Our system is also capable of generating a barangay clearance if the person requesting
+                            has a clean record in their barangay. 
+
+                            <br><br><b>Project Link: <a href="http://virsbayanluma1.online/login/" target="_blank">Violation and Incident Report System for Barangay Bayan Luma I</a></b><!--can be button/replace to button -->
+                        </p>
+                     
+                        <br><hr>
+                    </div>
+                    
+                    <div class = "projs">
+                        <h3>Declassified Crib Bot (Discord Bot)</h3>
+                        <h4>JavaScript (Node.js)</h4>
+                        <p>A custom discord utility bot for our personal server that includes music playing, games such as snake,
+                             rock-paper-scissor, and tic-tac-toe, and a bot that is intergrated with OpenAI's API to have ChatGPT
+                             functionality inside a discord server. The bot is still work in progress as I would like to add some 
+                             personality to its AI, as well as to integrate other functionalities that will help managing discord 
+                             servers.
+
+                            <br><br><b>Project Link: <a href="https://github.com/AeronGabriel/declassifiedcrib" target="_blank">Declassified Crib (Github Repository)</a></b>
+                        </p>
+                         <!--can be button/replace to button -->
+                         <br><hr>
+                    </div>
+
+                    <div class = "projs">
+                        <h3>My Porfolio</h3>
+                        <h4>HTML | CSS | JavaScript</h4>
+                        <p>My personal portfolio that showcases my background and experiences.
+
+                            <br><br><b>Project Link: <a href="https://github.com/AeronGabriel/My-Portfolio" target="_blank">My Portfolio (Github Repository)</a></b>
+                        </p>
+                         <!--can be button/replace to button -->
+                         <br><hr>
+                    </div>
+                    <!-- add more div sections for additonal projects -->
+                </div>
+            </div>        
+            
+            <div class="learnMoreBtn">
+                <button class = "projBtn">Documentations<i class="fa-solid fa-arrow-right"> </i></button>
+            </div>
+
+            <dialog class="projectsModal">
+                <button class = "closeModal2"><i class="fa-solid fa-rectangle-xmark"></i></button>
+                <h1> this is projects modal</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type 
+                     specimen book. It has survived not only five centuries, but also the leap into
+                      electronic typesetting, remaining essentially unchanged. It was popularised in 
+                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                      and more recently with desktop publishing software like Aldus PageMaker including 
+                      versions of Lorem Ipsum.</p>
+            </dialog>
+
         </section>
 
         <section id = "contact" class = "transition-left">
             <div class="contact-container">
-                <h2>Contact Me</h2>
+                <h2>Let's Connect!</h2>
                 <p>If anything else, please contact me through my email or contact number provided in my introduction or click the 
                     button below to email me directly. Thank you!
                 </p>
-                <a href = "mailto:montalbo.sjb@gmail.com" class = "btn">Contact</a>
+                
             </div>
+
+            <div class="inputs-container">
+                
+                <div class="fullnameInput">
+                    <input type="text" class="fullname" placeholder="Enter your full name" disabled>
+                 </div>
+                
+                 <div class="emailInput">
+                    <input type="email" class="email" placeholder="Enter your email" disabled>
+                 </div>
+
+                <div class="longintputs">
+                    <textarea class="long" rows="10" cols="83" placeholder="Enter your message here (Temporarily disabled due to hosting limitations)" disabled></textarea>
+                    <br><hr>
+                </div>
+
+                <div class="contactBtn">
+                    <button class = "contactButton"><a href = "mailto:montalbo.sjb@gmail.com" class = "btn">Contact</a></button>
+                </div>
+            </div>
+
         </section>
 
         <section id = "btnTop">
@@ -282,7 +358,7 @@
 
         <footer>
             <div class = "foot">
-                <p>2023 Aeron Gabriel Montalbo. All rights reserved.</p>
+                <p>© 2023 Aeron Gabriel Montalbo. All rights reserved.</p>
             </div>
         </footer>
 
