@@ -344,7 +344,7 @@ header {
 nav {
     width: auto;
     height: 70px;
-    background: linear-gradient(90deg, #d93131, #b90000, #80082a, #550735, #08063c);
+    background: linear-gradient(90deg, #1f160d, #24190e, #382715, #402f1d, #33210d);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,7 +369,7 @@ nav a::after {
     top: 0;
     width: 0;
     height: 120%;
-    background: linear-gradient(45deg, #ff0000, #bf0000, #400000);
+    background: linear-gradient(45deg, #e7eff0, #ffcf14, 	#103a61, #082845, #06152f);
     border-radius: 8px;
     transition: width .5s;
     bottom: -10%;
@@ -407,7 +407,7 @@ section {
     margin-top: 70px;
     align-items: center;
     display: block;
-    height: 80vh;
+    height: 650px;
 }
 
 .searchBar {
@@ -566,9 +566,9 @@ section {
     margin-left: 20px;
 }
 
-.modal {
-    min-height: 85dvh;
-    max-height: 90dvh;
+.aboutModal {
+    min-height: 600px;
+    max-height: 600px;
     min-width: 85%;
     max-width: 80%;
     top: 50%;
@@ -593,7 +593,7 @@ section {
     margin-top: 70px;
     align-items: center;
     display: block;
-    height: 80vh;   
+    height: 650px;   
 }
 
 .education-container {
@@ -717,7 +717,7 @@ section {
     margin-top: 70px;
     align-items: center;
     display: block;
-    height: 85vh;
+    height: 650px;
     scroll-margin-top: 70px;
 }
 
@@ -839,7 +839,7 @@ section {
     scroll-margin-top: 70px;
     position: relative;
     /* overflow-x: hidden; */
-    min-height: 85vh;
+    min-height: 650px;
 }
 
 .experience-container {
@@ -950,7 +950,7 @@ section {
     margin-left: 50px;
     display: block;
     scroll-margin-top: 70px;
-    min-height: 85vh;
+    min-height: 650px;
 }
 
 .projects-container {
@@ -962,14 +962,21 @@ section {
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
-
-    top: 50%;
+    margin-top: 20px;
+    /* top: 50%; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    overflow: hidden;
+    overflow-y: scroll;
+    min-height: 50%;
+    max-height: 50%;
 }
 
-.projects-container h2 {
-    text-align: center;
+#projects h2 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 15px;
     font-size: 35px;
     color: #fff;
 }
@@ -989,9 +996,58 @@ section {
     color: #fff;
 }
 
-.thesis {
+.projects-container b {
+    font-size: 20px;
+    color: #fff;
+}
+
+.projects-container a {
+    font-size: 20px;
+    color: #088fa7;
+}
+
+.projects-container::-webkit-scrollbar {
+    max-height: 50%;
+    width: 0.5vw; /*vw = view width, does not change scrollbar width when website is zoomed in or out*/
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #fff5f500, #ffffff, #fff5f500);
+    border-radius: 60px;
+}
+
+.projs {
+    color: #fff;
     margin-top: 10px;
-    border: 3px solid #000;
+    /* border: 3px solid #000; */
+}
+
+.projBtn {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    margin-top: 25px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+.projBtn i {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.projectsModal {
+    min-height: 600px;
+    max-height: 600px;
+    min-width: 85%;
+    max-width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*Contact me section=================================================================================== */
@@ -1010,7 +1066,7 @@ section {
     margin-top: 70px;
     display: block;
     scroll-margin-top: 70px;
-    min-height: 90vh;
+    min-height: 650px;
     
 }
 
@@ -1018,15 +1074,17 @@ section {
     border: 2px solid #ffffff;
     border-radius: 20px;
     position: relative;
-    width: 900px;
+    width: 1500px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
+    margin-top: 20px;
 
-    top: 50%;
+    /* top: 50%; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
 
 .contact-container h2 {
@@ -1040,13 +1098,90 @@ section {
     color: #fff;
 }
 
+.inputs-container {
+    /* border: 2px solid #fff; */
+    margin-top: 10px;
+    height: 450px;
+    width: 1500px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.fullname {
+    height: 50px;
+    width: 550px;
+    background: none;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    color: #fff;
+}
+
+.email {
+    height: 50px;
+    width: 550px;
+    background: none;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.contactBtn {
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+}
+
+.contactButton {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+.contactButton a {
+    color: #fff;
+}
+
 /*Button to Top======================================================================================== */
 
 #btnTop {
     position: relative;
     padding-top: 20px;
     position: sticky;
-    bottom: 0;
+    bottom: 20px;
 }
 
 .topBtn {
@@ -1072,6 +1207,10 @@ section {
 
 footer {
     text-align: center;
+}
+
+footer p {
+    color: #fff;
 }
 
 /*for transition======================================================================================= */
