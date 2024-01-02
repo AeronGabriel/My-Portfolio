@@ -839,7 +839,8 @@ section {
     scroll-margin-top: 70px;
     position: relative;
     /* overflow-x: hidden; */
-    height: 650px;
+    min-height: 650px;
+    max-height: 650px;
 }
 
 .experience-container {
@@ -950,7 +951,8 @@ section {
     margin-left: 50px;
     display: block;
     scroll-margin-top: 70px;
-    height: 650px;
+    min-height: 650px;
+    max-height: 650px;
 }
 
 .projects-container {
@@ -1066,7 +1068,8 @@ section {
     margin-top: 70px;
     display: block;
     scroll-margin-top: 70px;
-    height: 650px;
+    min-height: 650px;
+    max-height: 650px;
     
 }
 
