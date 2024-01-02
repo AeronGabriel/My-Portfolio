@@ -8,4 +8,4 @@ this is purely made with HTML, CSS and JavaScript.
 
 Will make it responsive soon, this build is still work in progress.
 
-I hop you do like visiting my portfolio and like it overall!
+I hope you do like visiting my portfolio and like it overall!
