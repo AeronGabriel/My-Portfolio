@@ -20,7 +20,7 @@
         align-items: center;
         min-height: 100vh;
         max-width: 100%;
-        background-image: linear-gradient(90deg, #000e2e, #004f5a);
+        background-image: linear-gradient(45deg, #000e2e, #004f5a);
         background-repeat: no-repeat;
         background-size: auto;
         background-attachment: fixed;
@@ -31,7 +31,8 @@
 /* Top part of portfolio =============================== */
     #intro {
         height: 1000px;
-        max-width: 100%;
+        max-width: 600px;
+        min-width: auto;
         background: #030d2b;
         overflow: hidden;
         top: 0;
@@ -57,19 +58,23 @@
         padding-top: 1%;
         margin-top: 0;
     /* background: orange; */
-        width: 600px;
+        width: auto;
         align-items: center;
         justify-content: center;
         display: flex;
         height: 40px;
-        margin-left:-60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        /* left: 50%;
+        transform: translateX(-50%); */
     }
 
     .socials a {
-        font-size: 15px;
+        font-size: 12px;
         display: inline-block;
         position: relative;
-        margin-left: -50px;
+        margin-left: -25px;
+        margin-right: -25px;
         color: #fff;
         align-items: center;
     }
@@ -82,13 +87,81 @@
     }
 
     .introduction {
-        margin-top: 0;
+        order: 2;
+        margin-top: -50px;
         padding-top: 0;
+        margin-left: 15px;
+        margin-right: 15px;
         text-align: center;
         width: auto;
     }
 
+    .intro-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 10px;
+    }
     .resume-btn {
         font-size: 12px;
+    }
+
+    .image {
+        order: 1;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px; 
+        height: 300px;
+        width: 300px;
+        background: #202122;
+        display: flex;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+    } 
+
+    /* Nav bar ============================= */
+
+    nav {
+        display: none;
+    }
+    
+    /* about section ======================= */
+
+    #about {
+        width: 300px;
+    }
+
+    /* education section =================== */
+
+    #education {
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    /* skills section ====================== */
+
+    #skills {
+        width: 300px;
+    }
+
+    /* experience section ================== */
+
+    #experience {
+        width: 300px;
+        margin-left: 50px;
+    }
+    
+    /* projects section =================== */
+
+    #projects {
+        width: 300px;
+    }
+
+    /* contact section ==================== */
+
+    #contact {
+        width: 300px;
     }
 }
