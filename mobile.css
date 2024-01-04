@@ -130,38 +130,324 @@
     /* about section ======================= */
 
     #about {
-        width: 300px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    .searchBar {
+        width: 380px;
+    }
+
+    .searchBar p {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+
+    .infoIcon {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+
+    .about-container {
+        width: 380px;
+        height: 350px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .aboutContent {
+        text-align: center;
+    }
+
+    .aboutContent p {
+        font-size: 15px;
+    }
+    
+    .aboutBtn {
+        margin-bottom: 20px;
+    }
+
+
 
     /* education section =================== */
 
     #education {
-        width: 300px;
-        margin-left: 50px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .searchBar2 {
+        width: 380px;
+    }
+
+    .searchBar2 p {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+
+    .education-container {
+        width: 380px;
+        height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .dlsudgrp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dlsudlogo img {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .dlsud {
+        text-align: center;
+    }
+
+    .dlsud h3 {
+        margin-left: 0;
+    }
+
+    .dlsud h4 {
+        margin-left: 0;
+    }
+
+    .dlsud p {
+        margin-left: 0;
+    }
+
+    .letrangrp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .letranlogo img {
+        top: 50%;
+        left: 70%;
+        transform: translateX(-30%, -50%);
+    }
+
+    .letran {
+        text-align: center;
+    }
+
+    .letran h3 {
+        margin-left: 0;
+    }
+
+    .letran h4 {
+        margin-left: 0;
+    }
+
+    .letran p {
+        margin-left: 0;
     }
 
     /* skills section ====================== */
 
     #skills {
-        width: 300px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .searchBar3 {
+        width: 380px;
+    }
+
+    .searchBar3 p {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    .skills-container {
+        width: 380px;
+    }
+
+    .ProgLang h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .ProgLang h4 {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 0;
+        color: #19addf;
+    }
+
+    .ProgLang p {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    .Database h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .Database h4 {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 0;
+        color: #19addf;
+    }
+
+    .Database p {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    .adobe h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .adobe h4 {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 0;
+        color: #19addf;
+    }
+
+    .adobe p {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    .Microsoft h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .Microsoft h4 {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 0;
+        color: #19addf;
+    }
+
+    .Microsoft p {
+        text-align: center;
+        font-size: 15px;
+        margin-left: 0;
     }
 
     /* experience section ================== */
 
     #experience {
-        width: 300px;
-        margin-left: 50px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .searchBar4 {
+        width: 380px;
+    }
+
+    .searchBar4 p {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+
+    .experience-container {
+        width: 380px;
     }
     
+    .exps h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .exps h4 {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+        color: #19addf;
+    }
+
+    .exps p {
+        font-size: 15px;
+        text-align: center;
+        margin-left: 0;
+    }
+
     /* projects section =================== */
 
     #projects {
-        width: 300px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects-container {
+        width: 380px;
+    }
+
+    .projs h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .projs h4 {
+        font-size: 20px;
+        text-align: center;
+        color: #19addf;
+    }
+
+    .projs p {
+        font-size: 15px;
+        text-align: center;
     }
 
     /* contact section ==================== */
 
     #contact {
-        width: 300px;
+        width: 400px;
+        height: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-container {
+        width: 380px;
+    }
+
+    .contact-container p {
+        font-size: 15px;
+    }
+
+    .inputs-container {
+        width: 380px;
+    }
+
+    .fullname {
+        width: 360px;
+    }
+
+    .email {
+        width: 360px;
+    }
+
+    .long {
+        width: 360px;
+    }
+
+    /* button to top */
+
+    #btnTop {
+        display: none;
+    }
+
+    footer {
+        margin-top: 20px;
     }
 }
