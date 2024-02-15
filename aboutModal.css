@@ -1,0 +1,28 @@
+.header-modal {
+    background-color: 	#0d1347;
+    height: 500px;
+}
+
+.header-modal h1 {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -55%);
+
+    font-size: 100px;
+    color: aliceblue;
+}
+
+.closeModal {
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    
+}
+
+.closeModal i {
+    color: red;
+}
